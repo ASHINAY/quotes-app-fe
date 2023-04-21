@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Homepage from './Pages/Homepage';
-import Quotespage from './Pages/Quotespage';
+import Homepage from './pages/Homepage';
+import Quotespage from './pages/Quotespage';
 import './App.css';
 
 function App() {
