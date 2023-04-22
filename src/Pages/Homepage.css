@@ -1,10 +1,9 @@
-.MainContainer{
-
-    
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-  text-align: center;
-  
-  }
+.MainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: 30px;
+  margin-top: 20px;
+  color: white;
+}
