@@ -17,6 +17,16 @@ function Quotespage() {
           Love is not about how many days, months, or years you have been together.
           Love is much about how much you love each other every single day.</p>
       </div>
+      <div className='Container2' >
+      <p style={{ padding: '20px 5px 2px 20px ' }}>
+          Love is not about how many days, months, or years you have been together.
+          Love is much about how much you love each other every single day.</p>
+          </div>
+          <div className='Container2' >
+      <p style={{ padding: '20px 5px 2px 20px ' }}>
+          Love is not about how many days, months, or years you have been together.
+          Love is much about how much you love each other every single day.</p>
+          </div>
     </div>
   )
 }
