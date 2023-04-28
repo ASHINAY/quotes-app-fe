@@ -7,14 +7,13 @@
   margin-top: 20px;
   color: white;
 }
-
-.Container{
-  width: 88px ; 
-  height: 28px; 
+.Container {
+  width: 88px;
+  height: 28px;
   display: flex;
-   justify-content: center; 
-  background: #C9A7EB; 
+  justify-content: center;
+  background: #C9A7EB;
   padding-top: 3px;
-   border-radius: 300px;
+  border-radius: 300px;
+  cursor: alias;
 }
-
