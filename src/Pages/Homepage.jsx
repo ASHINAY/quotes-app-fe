@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import '../pages/Homepage.css';
 import { useNavigate } from 'react-router-dom'
+import axios from "axios";
 
 function Homepage() {
   const navigate = useNavigate();
   const [categoryLabelList, setCategoryLabelList] = useState([]);
-  
+
   useEffect(() => {
     setCategoryLabelList(["Love", "Sad", "Happy", "Motivation", "Success"]);
   }, []);
@@ -14,6 +15,13 @@ function Homepage() {
 
     navigate("/Quotespage")
   }
+  axios.get('http://localhost:3000/getCategories')
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   return (
     <div>
       <div style={{
