@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 function Homepage() {
   const navigate = useNavigate();
   const [categoryLabelList, setCategoryLabelList] = useState([]);
-
+  
   useEffect(() => {
     setCategoryLabelList(["Love", "Sad", "Happy", "Motivation", "Success"]);
   }, []);
@@ -23,21 +23,12 @@ function Homepage() {
           <span style={{ color: 'white', fontWeight: 'bold' }}>Quotes App</span>
         </div>
       </div>
-      <div style={{ color: '#9384d1', marginLeft: '20px', marginTop: '40px', fontWeight: 'bold' }}>CategoriesLabelList</div>
+      <div style={{ color: '#9384d1', marginLeft: '20px', marginTop: '40px', fontWeight: 'bold' }}>Categories</div>
       <div className='MainContainer'>
-        <div className='Container' onClick={onCategoryClick}>
-          {categoryLabelList.map((categoryLabel, index) => (
-            <div key={index}>{categoryLabel}</div>
-          ))}
 
-        </div>
-        {/* // <div className='Container'>Sad</div>
-
-        // <div className='Container'>Happy</div>
-
-        // <div className='Container'>Motivation</div>
-
-        // <div className='Container'>Success</div> */}
+        {categoryLabelList.map((item, index) => (
+          <div className='Container' onClick={onCategoryClick}>{item}</div>
+        ))}
       </div>
     </div>
   )
